@@ -3,6 +3,7 @@ services:
     nginx:
         ports:
             - "80:80"
+            
     node-app:
         build: 
             context: .
@@ -14,6 +15,7 @@ services:
             - MONGO_PASSWORD=${MONGO_PASSWORD} 
             - SESSION_SECRET=${SESSION_SECRET}
         command: npm start
+
     mongo:
         - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
         - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD} 
