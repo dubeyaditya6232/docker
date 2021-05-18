@@ -45,7 +45,7 @@ app.use(session({
 app.use(express.json());
 
 app.get('/api/v1', (req, res) => {
-    res.send("<h2>Testing docker file !! </h2>");
+    res.send("<h2>Testing docker file </h2>");
     console.log("nginx working but after some modification ");
 });
 
