@@ -8,7 +8,7 @@ services:
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
     node-app:
         build: .
-        #image: adi2308/node-app
+        image: adi2308/node-app
         environment:
             - PORT=3000
         depends_on:
